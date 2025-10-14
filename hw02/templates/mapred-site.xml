@@ -1,0 +1,48 @@
+<configuration>
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>
+            $HADOOP_HOME/etc/*,
+            $HADOOP_HOME/etc/hadoop/*,
+            $HADOOP_HOME/lib/*, 
+            $HADOOP_HOME/share/hadoop/common/*,
+            $HADOOP_HOME/share/hadoop/common/lib/*,
+            $HADOOP_HOME/share/hadoop/hdfs/*,
+            $HADOOP_HOME/share/hadoop/hdfs/lib/*,
+            $HADOOP_HOME/share/hadoop/mapreduce/*,
+            $HADOOP_HOME/share/hadoop/mapreduce/lib/*,
+            $HADOOP_HOME/share/hadoop/yarn/*,
+            $HADOOP_HOME/share/hadoop/yarn/lib/*,
+
+        </value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.map.env</name>
+        <value>HADOOP_HOME=/home/hadoop/hadoop-3.4.0</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.env</name>
+        <value>HADOOP_HOME=/home/hadoop/hadoop-3.4.0</value>
+    </property>
+    <property>
+        <name>mapreduce.admin.user.env</name>
+        <value>HADOOP_HOME=/home/hadoop/hadoop-3.4.0</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.done-dir</name>
+        <value>/mr_history/done</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.intermediate-done-dir</name>
+        <value>/mr_history/tmp</value>
+    </property>
+    <property>
+        <name>yarn.log.server.url</name>
+        <value>http://team-23-jn:19888/jobhistory/logs/</value>
+    </property>
+
+</configuration>
